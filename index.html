@@ -1,19 +1,21 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html lang="en">
+  <head>
     <meta charset="utf-8">
-    <title>test 1</title>
+    <title>My First Bitstarter</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-combined.no-icons.min.css">
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css">
-    <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fsocial-buttons.css">
-    <script src="./index_files/startup-code-jquery.js"></script>
-    <script src="./index_files/startup-code-bootstrap.js"></script>
-    <link href="./index_files/css" rel="stylesheet" type="text/css">
-    <link href="./index_files/css(1)" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fsocial-buttons.css">    
+    <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fjquery.js"></script>
+    <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap.js"></script>
+    <link href="http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,300,400,600,700,800" 
+          rel="stylesheet" type="text/css">
     <style type="text/css">
 
       /* Large desktop */
-      @media (min-width: 980px) {
+      @media (min-width: 980px) { 
         body {
          padding-top: 60px;
         }
@@ -26,7 +28,7 @@
       }
 
       /* Landscape phones and down */
-      @media (max-width: 480px) {
+      @media (max-width: 480px) { 
        .copy {
          padding: 2.5% 10%;
        }
@@ -96,25 +98,26 @@
         color: #ccccff;
       }
     </style>
-  </head><script type="text/javascript">var new_nav = new function() {};var x;var old_navigator = window.navigator;for (x in navigator) {if (typeof navigator[x] == 'function') {eval("new_nav." + x + " = function() { return old_navigator." + x + "();};");} else {eval("new_nav." + x + " = navigator." + x + ";");}}new_nav.userAgent = "Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_3_2 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8H7 Safari/6533.18.5";new_nav.vendor = "Apple, Inc.";window.navigator = new_nav;</script>
-  <body style="">
+  </head>
+  <body>
 
     <!-- Mobile-friendly navbar adapted from example. -->
     <!-- http://twitter.github.io/bootstrap/examples/starter-template.html -->
     <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container">
-          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+          <button type="button" class="btn btn-navbar"
+                  data-toggle="collapse" data-target=".nav-collapse">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="brand" href="http://luzme.com">Luzme</a>
+          <a class="brand" href="#">Bitstarter</a>
           <div class="nav-collapse collapse">
             <ul class="nav">
-              <li class="active"><a href="http://luzme.com">Home</a></li>
-             <!-- <li><a href="http://luzme.com/about">About</a></li>-->
-             <!-- <li><a href="https://spark-public.s3.amazonaws.com/startup/code/bitstarter-hw4.html#contact">Contact</a></li>-->
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
             </ul>
           </div><!--/.nav-collapse -->
         </div>
@@ -130,26 +133,26 @@
       <!-- www.google.com/fonts/specimen/Ubuntu#pairings -->
       <div class="row-fluid heading">
         <div class="span12">
-          <h1>Luzme for ebooks</h1>
+          <h1>Product: Development Version</h1>
         </div>
-      </div>
+      </div> 
       <div class="row-fluid subheading">
         <div class="span12">
           <!-- Special typography from Bootstrap for lead paragraph. -->
           <!-- http://twitter.github.io/bootstrap/base-css.html#typography -->
-          <p class="lead">Luzme is already the place to find your next ebook;<br/>
-           now I want to give you a mobile app!</p>
+          <p class="lead">One sentence description.</p>
         </div>
       </div>
       <div class="row-fluid pitch">
         <div class="span5 offset1 video">
-          <img class="img-polaroid" src="./index_files/480x300">
+          <img class="img-polaroid" alt="Placeholder" src="http://placehold.it/480x300">
         </div>
 
         <!-- We define a new 'actions' div to contain statistics, order, and share buttons.-->
         <div class="span5 actions">
+          <div class="row-fluid">
           <div class="span8 offset2">
-            <div class="statistics">
+            <div class="row-fluid statistics">
               <div class="span4">
                 <!-- linediv-l and linediv-r give dividing lines that look
                 different in horizontal and vertical layouts, illustrating
@@ -170,6 +173,7 @@
               </div>
             </div>
           </div>
+          <div class="row-fluid">
           <div class="span10 offset1">
             <!-- Bootstrap progress bar -->
             <!-- http://twitter.github.io/bootstrap/components.html#progress -->
@@ -178,17 +182,23 @@
               <div class="bar bar-warning" style="width: 40%;"></div>
             </div>
           </div>
+          </div>
+          <div class="row-fluid">
           <div class="span6 offset3 order">
             <!-- Standard Bootstrap button. -->
             <!-- http://twitter.github.io/bootstrap/base-css.html#buttons -->
             <button class="btn btn-success btn-large">Preorder</button>
           </div>
+          </div>
+          <div class="row-fluid">
           <div class="span8 offset2 social">
             <!-- Social buttons are not included in default Bootstrap. -->
             <!-- See: http://noizwaves.github.io/bootstrap-social-buttons -->
             <button class="btn btn-twitter"><i class="icon-twitter"></i> | Twitter</button>
             <button class="btn btn-facebook"><i class="icon-facebook"></i> | Facebook</button>
           </div>
+          </div>
+        </div>
         </div>
       </div>
 
@@ -198,14 +208,21 @@
       <!-- http://placehold.it -->
       <div class="row-fluid section1">
         <div class="span5 offset1 asset">
-          <img class="img-polaroid" src="./index_files/480x300">
+          <img class="img-polaroid"  alt="Placeholder" src="http://placehold.it/480x300">
         </div>
         <div class="span5 copy">
           <p>
-Looking for your next ebook? Find it faster with Luzme.
-          </p>
-          <p>
-            Too expensive? Luzme will watch the prices and alert you when they drop.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+            porta, dui sagittis hendrerit rutrum, nunc leo tempus nisl, eu
+            mollis justo velit at nunc. Fusce nec egestas sem. Donec
+            fringilla ante lectus, a pellentesque lacus dignissim ac. Sed
+            volutpat lorem ut congue malesuada. In facilisis scelerisque
+            turpis sed lacinia. Donec in orci lectus. Donec auctor semper
+            quam, eget rhoncus purus fringilla id. Phasellus id nibh eu
+            risus ultrices adipiscing.  Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit. Donec porta, dui sagittis hendrerit
+            rutrum, nunc leo tempus nisl, eu mollis justo velit at
+            nunc. Fusce nec egestas sem. Donec fringilla.
           </p>
         </div>
       </div>
@@ -213,14 +230,21 @@ Looking for your next ebook? Find it faster with Luzme.
       <div class="row-fluid section2">
         <div class="span5 offset1 copy copy-right">
           <p>
-            But you want an app? We want to build it.
-          </p>
-          <p>
-            All we need is some money !
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+            porta, dui sagittis hendrerit rutrum, nunc leo tempus nisl, eu
+            mollis justo velit at nunc. Fusce nec egestas sem. Donec
+            fringilla ante lectus, a pellentesque lacus dignissim ac. Sed
+            volutpat lorem ut congue malesuada. In facilisis scelerisque
+            turpis sed lacinia. Donec in orci lectus. Donec auctor semper
+            quam, eget rhoncus purus fringilla id. Phasellus id nibh eu
+            risus ultrices adipiscing.  Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit. Donec porta, dui sagittis hendrerit
+            rutrum, nunc leo tempus nisl, eu mollis justo velit at
+            nunc. Fusce nec egestas sem. Donec fringilla.
           </p>
         </div>
         <div class="span5 asset">
-          <img class="img-polaroid" src="./index_files/480x300">
+          <img class="img-polaroid"  alt="Placeholder" src="http://placehold.it/480x300">
         </div>
       </div>
 
@@ -233,7 +257,8 @@ Looking for your next ebook? Find it faster with Luzme.
             <div class="accordion" id="accordion2">
               <div class="accordion-group">
                 <div class="accordion-heading">
-                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="https://spark-public.s3.amazonaws.com/startup/code/bitstarter-hw4.html#collapseOne">
+                  <a class="accordion-toggle" data-toggle="collapse"
+                     data-parent="#accordion2" href="#collapseOne">
                     What does FAQ stand for?
                   </a>
                 </div>
@@ -245,7 +270,8 @@ Looking for your next ebook? Find it faster with Luzme.
               </div>
               <div class="accordion-group">
                 <div class="accordion-heading">
-                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="https://spark-public.s3.amazonaws.com/startup/code/bitstarter-hw4.html#collapseTwo">
+                  <a class="accordion-toggle" data-toggle="collapse"
+                     data-parent="#accordion2" href="#collapseTwo">
                     What's a Frequently Asked Question?
                   </a>
                 </div>
@@ -272,6 +298,5 @@ Looking for your next ebook? Find it faster with Luzme.
         </div>
       </div>
     </div>
-
-
-</body></html>
+  </body>
+</html>
